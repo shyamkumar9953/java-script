@@ -16,7 +16,7 @@ const regularuser = {
         }
     }
 };
-console.log(regularuser.fullname.username);
+// console.log(regularuser.fullname.username);
 
 // meeging of objects
 const obj1={1:"a",2:"b"};
@@ -26,5 +26,41 @@ const obj2={3:"c",4:"d"};
 
 // console.log(obj3);
 const obj3=Object.assign({},obj1,obj2);
-console.log(obj3);
+// console.log(obj3);
+
+
+// array of objects
+const user=[
+    {
+        id:"1",
+        email:"shyam@gmail.com",
+    },
+    {
+        id:"2",
+        email:"shyam@gmail.com",
+    },
+    {
+        id:"3",
+        email:"shyam@gmail.com",
+    }
+]
+// console.log(Object.keys(tinderuser));
+// console.log(Object.values(tinderuser));
+// console.log(Object.entries(tinderuser));
+
+console.log(tinderuser.hasOwnProperty('isloggedin')); // check wheather is present in object 
+
+// api in json formate
+// its like a object  
+{
+    "name":"shyam",
+    "email":"shyam@gmail.com"'
+    "id":"1234",
+}
+// its like also array of objects
+[
+    {},
+    {},
+    {},
+]
 
