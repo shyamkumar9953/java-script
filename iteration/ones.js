@@ -20,17 +20,28 @@
     
 //  })
 
-const nums=[1,2,3,4,5,6,7,8,9,10];
+//const nums=[1,2,3,4,5,6,7,8,9,10];
 // const mynewnums=nums.filter((num)=>{
 //     return num>2;
 // });
 // console.log(mynewnums);
 
-const arr=[];
-nums.forEach((num)=>{
-    if(num>2){
-        arr.push(num);
-    }
-})
-console.log(arr);
+// const arr=[];
+// nums.forEach((num)=>{
+//     if(num>2){
+//         arr.push(num);
+//     }
+// })
+// console.log(arr);
+
+// const arr=[1,2,3,4,5,6,7,8,9];
+// const newnums=arr.map((num)=>{return num+10});
+// console.log(newnums);
+
+
+// chaining 
+const arr=[1,2,3,4,5,6,7,8,9];
+const newarr=arr.map((num)=>{return num*10}).map((num)=>{return num+1});
+
+console.log(newarr);
 
