@@ -40,8 +40,46 @@
 
 
 // chaining 
-const arr=[1,2,3,4,5,6,7,8,9];
-const newarr=arr.map((num)=>{return num*10}).map((num)=>{return num+1});
+// const arr=[1,2,3,4,5,6,7,8,9];
+// const newarr=arr.map((num)=>{return num*10}).map((num)=>{return num+1});
 
-console.log(newarr);
+// console.log(newarr);
 
+
+// reduce function
+// const arr=[1,2,3,4,5,6,7,8,9];
+
+//let initial=3;
+// const sum=arr.reduce(function(acc,currval){
+//     return acc+currval
+// },initial);
+
+// const sum=arr.reduce((acc,currval)=>{
+//     return acc+currval
+// },initial);
+// console.log(sum);
+
+
+// array of objects
+const arr=[
+    {
+        name:"dev course ",
+        price:999,
+    },
+    {
+        name:"mobile course ",
+        price:599,
+    },
+    {
+        name:"dsa course ",
+        price:1299,
+    },{
+        name:"data scince course ",
+        price:199,
+    }
+]
+const maoneytopay=arr.reduce((acc,item)=>{
+    return acc+item.price
+},0);
+
+console.log(maoneytopay);
