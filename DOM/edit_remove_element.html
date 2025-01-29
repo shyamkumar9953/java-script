@@ -38,5 +38,13 @@
  console.log(newli);
  secondlang.replaceWith(newli) // repalce with the desire position
 
+ // edit 
+ const first=document.querySelector('li:first-child');
+ first.outerHTML='<li>typescript</li>'
+
+ // remove 
+ const last=document.querySelector('li:nth-child(4)'); // use ('li:last-child')
+ last.remove()
+
 </script>
 </html>
