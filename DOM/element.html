@@ -21,11 +21,21 @@
     // console.log(temp.children[0].innerHTML);
 
     // loop on html collection return by temp.children
-    for (let index = 0; index < temp.children.length; index++) {
-        console.log(temp.children[index].innerHTML); 
-    }
+    // for (let index = 0; index < temp.children.length; index++) {
+    //     console.log(temp.children[index].innerHTML); 
+    // }
     // chnage the color of the particular children of parent class
     temp.children[0].style.color='red';
+    // console.log(temp.firstElementChild);
+    // console.log(temp.lastElementChild);
+
+    const dayone=document.querySelector('.day');
+    console.log(dayone);
+    console.log(dayone.parentElement);
+    console.log(dayone.nextElementSibling);
+    
+    
+    
     
 </script>
 </html>
