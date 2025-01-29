@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color: black;color:aliceblue;" >
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+</body>
+<script>
+    function addlanguage(langName){
+        const li=document.createElement('li');
+        li.innerText=langName;
+        document.querySelector('.language').appendChild(li);
+    }
+  addlanguage("python");
+  addlanguage("c++");
+
+  // best way to all element 
+ function optimize(langName){
+    const li=document.createElement('li');
+    li.appendChild(document.createTextNode(langName));
+    document.querySelector('.language').appendChild(li);
+ }
+ optimize("React")
+
+ // edit 
+
+ const secondlang=document.querySelector('li:nth-child(2)'); // select which u want to replace
+ console.log(secondlang);
+ 
+ const newli=document.createElement('li'); // create new list
+
+ newli.textContent="mojo"; // add text which u want 
+ console.log(newli);
+ secondlang.replaceWith(newli) // repalce with the desire position
+
+</script>
+</html>
